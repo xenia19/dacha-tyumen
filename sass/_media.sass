@@ -1,0 +1,156 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.first-phrase 
+			font-size: 30px
+	.header-text h2
+			font-size: 35px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.first-phrase
+			font-size: 30px
+	.header-text h2
+			font-size: 25px
+
+	.container
+		display: grid
+		grid-template-columns: 1fr
+		grid-row: 2
+	.about
+	
+		grid-column: 1
+		grid-row: 2
+		justify-self: center
+		text-align: justify
+		margin: 10px
+	.about h1
+		text-align: center
+	.photo
+		grid-row: 1
+		grid-column: 1
+	
+
+	.icons, .button  
+		justify-self: center
+
+
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width : 768px)
+	
+
+
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+	
+	label
+		margin-top: 35px
+		text-align: right
+		font-size: 36px
+		line-height: 20px
+		display: block
+		cursor: pointer
+		font-color: white
+
+	#toggle:checked + .header-nav
+		display: inline
+		font-size: 25px
+		position: absolute
+
+	.logo
+		padding-left: 20px
+	.header-nav a
+		display: block
+		margin: 0
+	.header-nav 
+		display: none
+		
+
+	.header-text h1
+			font-size: 30px
+			padding: 20px
+
+	.header-text h2
+			font-size: 20px
+			padding: 20px
+
+	.all-services
+		grid-template-columns: 1fr
+
+	.main-iso
+		grid-template-columns: 1fr
+
+	.blog-home
+		grid-template-columns: 1fr
+
+	.stat
+		grid-template-columns: 1fr
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

@@ -1,0 +1,334 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 16px
+	
+
+	position: relative
+	line-height: 1.65
+	font-family: 'Roboto', sans-serif
+	overflow-x: hidden
+	color: $text
+
+.grid
+	display: grid
+
+.site-header
+	grid-template-columns: 1fr
+	height: 100vh
+	background-color: #1a1a1a
+.top-line .logo
+	img
+		max-width: 170px
+		max-height: auto
+		padding-top: 70px
+		padding-left: 40px
+
+.first-phrase
+	
+	padding-top: 70px
+	text-align: center
+	font-family: 'Playfair Display', serif
+	font-size: 55px
+	color: #23220D
+	font-weight: 600
+	
+
+
+.button
+	text-align: center
+	padding-top: 5px
+.btn-orange
+	background-color: #A3920C
+	color: #23220D
+	
+.btn:hover
+	color: #23220D
+	background-color: darken(#A3920C, 10%)
+
+
+#first
+	
+	height: auto
+	align-content: center
+	padding: 20px
+	
+
+	h2
+		text-align: center
+	
+		font-family: 'Playfair Display', serif
+		color: #23220D
+		font-weight: 600
+	img
+		max-height: 120px
+		max-width: auto
+		padding: 20px
+
+
+
+.descrip
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr 1fr
+	grip-gap: 5px
+	font-family: "Arial"
+	padding-top: 20px
+	
+	
+	justify-items: center
+	align-content: center
+	
+	
+	img	
+		max-width: 200px
+		max-height: auto
+		margin: auto
+	
+		
+		
+	p
+		text-align: center
+		max-width: 200px
+
+.instruments img
+	display: flex
+	margin: auto
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center 
+	opacity: 0.9
+	
+.fields
+
+#numbers
+	
+	height: auto
+	background-color: #23220D
+	
+	h2
+		text-align: center
+		padding: 30px
+		color: #CCB38E
+		font-family:  "Playfair Display"
+		font-weight: 600
+
+
+.numbers-text
+	height: auto
+	grid-template-columns: repeat(5, 1fr)
+	align-items: center
+	justify-items: center
+	color: #CCB38E
+	font-family: "Arial"
+	h3
+		font-size: 18px
+		text-align: center
+		
+	p
+		font-size: 35px	
+		text-align: center
+	
+	
+	
+	
+
+
+.numbers-img
+	img
+		max-width: 250px
+		max-height: auto
+
+.docs 
+	grid-template-columns: 1fr 1fr
+	img
+		max-height: 250px
+		max-width: auto
+
+.berries
+	height: auto
+	padding: 20px
+	
+
+.owl-carousel .owl-stage 
+  display: block
+  align-items: center
+ 
+
+.owl-carousel .item 
+	img
+		text-align: center
+		max-width: 300px
+		margin: auto
+
+
+.owl-next, .owl-prev
+  position: absolute
+  top: 46%
+
+
+.owl-next 
+  right: 2%
+
+.owl-prev
+	left: 2%
+
+.owl-carousel .fa
+	color:#FBDD88
+	font-size: 35px
+	z-index: 1000
+.owl-nav 
+	display: block !important
+
+.footer
+	background-color: #23220D
+	height: 20vh
+	grid-template-columns: 1fr 1fr
+	justify-items: center
+	align-items: center
+	padding: 20px
+	font-size: 18px
+	color: #CCB38E
+	font-family: "Arial"
+	p
+		text-align: center
+		color: #CCB38E
+	a
+		color: #CCB38E
+	a:hover
+		color: darken(#CCB38E, 15%)
+		text-decoration: none
+
+
+
+	
+.copyright
+	background-color: #23220D
+	text-align: center
+	font-size: 16px
+	color: #CCB38E
+	font-family: "Arial"
+	
+	padding: 20px
+	border-top: 1px solid rgba(255,255,255, .1)
+
+
+
+.map-link:hover
+	text-decoration: underline
+	cursor: pointer
+	color: darken(#CCB38E, 15%)
+
+
+	
+@media only screen and (max-width : 1200px)	
+	.first-phrase
+		font-size: 45px
+		padding-top: 230px
+	.logo
+		display: none
+	
+		
+
+
+@media only screen and (max-width : 992px)
+
+	.first-phrase
+		font-size: 35px
+	.logo
+		display: none
+	
+@media only screen and (max-width : 768px)
+	.first-phrase
+		font-size: 29px
+		padding-top: 250px
+	.logo
+		display: none
+	.numbers-text 
+		grid-template-columns: 1fr 1fr
+		p
+			font-size: 25px
+	#numbers h2
+		font-size: 25px
+	#first
+		padding-top: 20px
+	.descrip
+		grid-template-columns: 1fr 1fr 1fr
+@media only screen and (max-width : 480px)
+	.first-phrase
+		font-size: 25px
+		padding-top: 250px
+	.site-header img
+		
+		grid-template-columns: 1fr
+	.logo
+		display: none
+	.descrip
+		
+		font-size: 15px
+		grid-template-columns: 1fr 1fr
+		height: auto
+	#first
+		h2
+			font-size: 25px
+			padding-top: 20px
+	
+	.numbers-text
+	
+		grid-template-columns: 1fr 1fr
+		
+		h3
+			font-size: 17px
+		p
+			font-size: 22px
+		.number-item
+			padding: 10px
+	
+	
+	.copyright
+		font-size: 12px
+	.footer 
+		font-size: 14px
+
+
+
+@media only screen and (max-width : 320px)
+	.first-phrase
+		font-size: 20px
+		padding-top: 20px
+
+	#numbers h2
+		font-size: 19px
+	.number-item
+		h3, p
+			font-size: 16px
+	
+	.logo
+		display: none
+	#first h2
+		font-size: 18px
+	.descrip
+		grid-template-columns: 1fr
+		font-size: 14px
+	.footer
+		font-size: 12px
+
+	
+		
